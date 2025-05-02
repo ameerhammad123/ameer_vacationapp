@@ -12,9 +12,12 @@
             background-color: #f4f4f9;
             color: #333;
             text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
-            background-color: #007bff;
+            background-color: #00BCD4;
             color: white;
             padding: 2rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -27,6 +30,7 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+            flex: 1 0 auto;
         }
         .description {
             background-color: white;
@@ -36,7 +40,7 @@
             margin-bottom: 2rem;
         }
         .description h2 {
-            color: #007bff;
+            color: #00BCD4;
             margin-top: 0;
         }
         .description p {
@@ -57,10 +61,11 @@
             background-color: #218838;
         }
         footer {
-            margin-top: 3rem;
-            padding: 1rem;
-            background-color: #007bff;
+            background-color: #00BCD4;
             color: white;
+            padding: 1rem;
+            flex-shrink: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -83,7 +88,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Vacation Scheduler Team. All rights reserved.</p>
+        <p>© 2025 Vacation Scheduler Team. All rights reserved.</p>
     </footer>
 </body>
 </html>

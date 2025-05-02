@@ -30,23 +30,29 @@
             font-size: 2.5rem;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px; /* Increased from 800px to 900px */
             margin: 2rem auto;
             padding: 0 1rem;
             flex: 1 0 auto;
         }
-        .description {
+        .description, .installation {
             background-color: white;
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
         }
-        .description h2 {
+        .description h2, .installation h2 {
             color: #00BCD4;
             margin-top: 0;
         }
-        .description p {
+        .description p, .installation p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        .installation ol {
+            text-align: left;
+            padding-left: 1.5rem;
             line-height: 1.6;
             font-size: 1.1rem;
         }
@@ -69,8 +75,8 @@
             padding: 1rem;
             flex-shrink: 0;
             width: 100%;
-            max-width: 100%; 
-            overflow-x: hidden; 
+            max-width: 100%;
+            overflow-x: hidden;
         }
     </style>
 </head>
@@ -85,6 +91,18 @@
             <p>
                 The Vacation Scheduler Mobile App is your go-to solution for planning and managing vacations and excursions with ease. Designed for Android 8.0+ devices, this app allows travelers to organize vacation details like dates, hotels, and activities, set reminders, and share plans—all in one place. With offline functionality powered by Room Database, you can access your plans anytime, anywhere. Perfect for casual vacationers, busy professionals, and families looking to streamline their travel planning.
             </p>
+        </div>
+
+        <div class="installation">
+            <h2>Installation Steps</h2>
+            <p>Follow these steps to install the Vacation Scheduler app on your Android device:</p>
+            <ol>
+                <li>Click the "Download Vacation Scheduler APK" button below to download the APK file.</li>
+                <li>Once downloaded, locate the APK file in your device’s Downloads folder or notification bar.</li>
+                <li>Tap the APK file to begin installation. You may need to enable "Install unknown apps" in your device settings (Settings > Apps & Notifications > Special app access > Install unknown apps > Browser > Allow).</li>
+                <li>Follow the on-screen prompts to install the app, granting any requested permissions (e.g., storage).</li>
+                <li>After installation, find the app on your home screen or app drawer and tap to open it.</li>
+            </ol>
         </div>
 
         <a href="https://github.com/ameerhammad123/ameer_vacationapp/raw/refs/heads/main/app-release.apk" class="download-btn">
